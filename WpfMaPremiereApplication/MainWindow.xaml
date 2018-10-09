@@ -1,0 +1,47 @@
+﻿<Window x:Class="WpfMaPremiereApplication.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfMaPremiereApplication"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="670" Width="1099">
+
+    <Grid x:Name="grid1" RenderTransformOrigin="0.5,0.5" Margin="0,10,0,-10">
+
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+
+        <TextBox Text="Bonjour" FontFamily="Verdana" 
+                 FontSize="24" Grid.Row="2" Grid.ColumnSpan="9" Margin="6,44,154,76" Grid.RowSpan="2">
+            <TextBox.Foreground>
+                <LinearGradientBrush>
+                    <LinearGradientBrush.GradientStops>
+                        <GradientStop Offset="0.00" Color="Red" />
+                        <GradientStop Offset="0.50" Color="Indigo" />
+                        <GradientStop Offset="1.00" Color="Violet" />
+                    </LinearGradientBrush.GradientStops>
+                </LinearGradientBrush>
+            </TextBox.Foreground>
+        </TextBox>
+
+        <TextBox x:Name="FirstTextB" Text="Bonjour bbbbb" FontFamily="Verdana" FontSize="24" 
+                 Grid.Row="1" Margin="5,7,-5,206" Grid.RowSpan="2">
+            <TextBox.Foreground>
+                <LinearGradientBrush>
+                    <LinearGradientBrush.GradientStops>
+                        <GradientStop Offset="0.00" Color="Red" />
+                        <GradientStop Offset="0.50" Color="Indigo" />
+                        <GradientStop Offset="1.00" Color="Violet" />
+                    </LinearGradientBrush.GradientStops>
+                </LinearGradientBrush>
+            </TextBox.Foreground>
+        </TextBox>
+        <Button Grid.Row="0" Click="Button_Click" Content="Valider"></Button>
+    </Grid>
+</Window>
