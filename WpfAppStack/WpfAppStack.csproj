@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9B8EB983-1C0A-4C4A-B7D2-502B26DA9877}</ProjectGuid>
+    <ProjectGuid>{A5879486-AEF1-4B55-84E9-BF0DCC011B4C}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>WpfMaPremiereApplication</RootNamespace>
-    <AssemblyName>WpfMaPremiereApplication</AssemblyName>
+    <RootNamespace>WpfAppStack</RootNamespace>
+    <AssemblyName>WpfAppStack</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -54,36 +54,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="AccesSource.xaml.cs">
-      <DependentUpon>AccesSource.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Formulaire.xaml.cs">
-      <DependentUpon>Formulaire.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Models\PersonneTp.cs" />
-    <Compile Include="TpBinding.xaml.cs">
-      <DependentUpon>TpBinding.xaml</DependentUpon>
-    </Compile>
-    <Page Include="AccesSource.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Binding.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Calculatrice.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Exercice.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Formulaire.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -92,23 +62,10 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Binding.xaml.cs">
-      <DependentUpon>Binding.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Calculatrice.xaml.cs">
-      <DependentUpon>Calculatrice.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Exercice.xaml.cs">
-      <DependentUpon>Exercice.xaml</DependentUpon>
-    </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="TpBinding.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">

@@ -1,0 +1,49 @@
+﻿<Window x:Class="WpfMaPremiereApplication.AccesSource"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:me="clr-namespace:WpfMaPremiereApplication.Models"
+        xmlns:local="clr-namespace:WpfMaPremiereApplication"
+        mc:Ignorable="d"
+        Title="AccesSource" Height="450" Width="800">
+    <Window.Resources>
+        <me:PersonneTp x:Key="UserData"></me:PersonneTp>
+    </Window.Resources>
+
+    <StackPanel >
+        <!--<TextBlock Text="{Binding Source={x:Static SystemFonts.IconFontFamily},Path=Source}" ></TextBlock>-->
+
+        <!--<Border BorderThickness="2"  BorderBrush="Black">
+            <TextBlock Margin="43,0,125,0" Height="35" >           
+   
+           <Run Text="{Binding Source={StaticResource UserData},Path=Prenom}"></Run>
+            <Run></Run>
+           <Run  Text="{Binding Source={StaticResource UserData},Path=Nom}"></Run>
+            <Run></Run>
+           <Run Text="{Binding Source={StaticResource UserData},Path=Age}"></Run>
+
+            </TextBlock>
+        </Border>-->
+        <!--<TextBlock>
+                <TextBlock.Text>
+                    <Binding Path="Title">
+                        <Binding.RelativeSource>
+                            <RelativeSource Mode="FindAncestor" AncestorType="{x:Type Window}"/>
+                        </Binding.RelativeSource>
+                    </Binding>
+                </TextBlock.Text>
+            </TextBlock>-->
+        <!--<StackPanel Orientation="Horizontal"> ici je vais saisir mon formulaire
+            <TextBlock Text="nomm"></TextBlock>
+            <TextBox  Text="Saisisser ici votre nom" Margin="20"></TextBox>
+        </StackPanel>-->
+        <TextBlock Text="{Binding Path=Nom}" Margin="20"/>
+
+        <TextBlock Text="{Binding Path=Prenom}" Margin="20"/>
+        <TextBlock Text="{Binding Path=Age}" Margin="20"/>
+        
+
+    </StackPanel>
+
+</Window>
